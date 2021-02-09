@@ -1,0 +1,278 @@
+html{
+    font-family: mini-wakuwaku-maru;
+}
+body{
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-image: url(image/background.png);
+    background-size: 2200px;
+    background-position: top;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+#stcount{
+    font-size: 5em;
+    color: #000000;
+}
+#about{
+    position: relative;
+    top: 140px;
+    background-color: #90ee90;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.nomal{
+}
+.hover1{
+    display: none;
+}
+.hover2{
+    display: none;
+}
+
+
+#title{
+    color: chartreuse;
+    font-size: 200%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+#nyuuryoku{
+    width: 60%;
+    height: 160%;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    opacity: 0.7;
+    font-weight: bold;
+    border-radius: 30px;
+    font-family: sans-serif;
+}
+#rank{
+    font-size: 3em;
+    padding: 0px;
+    margin: 10px;
+}
+#frog{
+    position: relative;
+    top: 10px;
+}
+.jump{
+    animation: jump 0.9s linear 0s infinite;
+}
+.jump_char{
+    animation: jump 0.9s linear 0s;
+    color: #00ff00;
+}
+.poyon{
+    animation: poyon 1.2s linear 0s;
+}
+.poyonR{
+    animation: poyonR 0.9s linear 0s;
+}
+.hurueru{
+    animation: hurueru 0.1s linear 0s infinite;
+}
+@keyframes jump {
+  0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  15%  { transform: scale(1.0, 0.9) translate(0%, 5%); }
+  30%  { transform: scale(1.0, 0.9) translate(0%, 10%); }
+  50%  { transform: scale(1.0, 0.9) translate(0%, -30%); }
+  70%  { transform: scale(1.0, 0.9) translate(0%, 5%); }
+  100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
+@keyframes jump2 {
+  0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  15%  { transform: scale(0.9, 1.01) translate(0%, -20%); }
+  30%  { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  50%  { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  70%  { transform: scale(0.9, 1.01) translate(0%, -20%); }
+  100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
+@keyframes poyon {
+  0%   { transform: scale(0.8, 1.4) translate(50%, -100%); }
+  10%  { transform: scale(0.8, 1.4) translate(0%, -15%); }
+  20%  { transform: scale(1.4, 0.6) translate(0%, 30%); }
+  30%  { transform: scale(0.9, 1.1) translate(0%, -10%); }
+  40%  { transform: scale(0.95, 1.2) translate(0%, -30%); }
+  50%  { transform: scale(0.95, 1.2) translate(0%, -10%); }
+  60%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+  70%  { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
+@keyframes poyonR {
+  0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  10%  { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  20%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+  30%  { transform: scale(0.95, 1.2) translate(0%, -10%); }
+  40%  { transform: scale(0.95, 1.2) translate(0%, -30%); }
+  50%  { transform: scale(0.9, 1.1) translate(0%, -10%); }
+  60%  { transform: scale(1.4, 0.6) translate(0%, 30%); }
+  70%  { transform: scale(0.8, 1.4) translate(0%, -15%); }
+  100% { transform: scale(0.8, 1.4) translate(-50%, -100%); }
+}
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(0px, 0px) rotateZ(4deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(0px, 0px) rotateZ(-4deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+#text {
+    width: 1000;
+    height: auto;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 3em;
+    color: #fff;
+}
+#moji {
+        width: 100%;
+    word-break: break-all;
+        height: auto;
+        padding: 0px;
+        margin-top: 0px;
+        font-size: 2em;
+        color: #666;
+}
+#a,#score{
+    color:#228b22 ;
+    font-size: 2em;
+}
+#b,#miss{
+    color:#b22222;
+    font-size: 2em;
+}
+#c,#time{
+    color:#0000ff;
+    position: relative;
+    bottom: 380px;
+    right: 200px;
+    text-align: center;
+    font-size: 2em;
+}
+#allscore{
+    position: relative;
+    left: 0px;
+    display: inline-block;
+}
+#allscore div{
+    display: inline-block;
+}
+#start,#start2,#re{
+    position: relative;
+    top:-100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#re{
+    left: 200px;
+    top: -200px;
+}
+
+#start:hover{
+    transform: rotate(20deg);
+}
+#start:hover ~ .nomal{
+    color: lightgreen;
+}
+
+
+#start2:hover{
+    transform: rotate(20deg);
+}
+
+#re:hover{
+    transform: rotate(20deg);
+}
+.add-blue {
+    font-size: 0.7em;
+    color: #00ff00;
+    transition: all 300ms 0s ;
+}
+.add-red {
+    transform: rotate( -15deg );
+    color: #ff0000;
+    transition: all 300ms 0s ;
+}
+#finish{
+    position: relative;
+    bottom: 100px
+}
+#Display2{
+    position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border: solid 3px #555;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border-radius: 50px;
+}
+#Display2:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 20px solid transparent;
+  border-top: 20px solid #555;
+}
+#Display2:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+}
+#a,#b{
+    margin-bottom: 0px;
+}
+#score,#miss{
+    margin-top: 4px;
+}
+#finish{
+    position: relative;
+    top: 10px;
+}
+#allscore{
+    position: relative;
+    height: 66px;
+        background-color: black;
+        opacity: 0.7;
+        border-radius: 30px;
+    padding: 10px;
+}
+.allscores{
+    top: -100px;
+}
+.allscoref{
+    top: 0px;
+}
+#frogpics2{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#massage2{
+    clear: both;
+    font-size: 2em;
+    margin: 0px;
+    padding: 20px;
+}

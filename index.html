@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>タイピングアプリ</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1 id="title">カエルのタイピングゲーム</h1>
+        <p id="massage"></p>
+        <p id="rank"></p>
+        <div id="frog" class="jump">
+            <img id="frogpics" width="200px" height="200px" alt="かえる">
+        </div>
+        <div id="Display">
+            <div id="nyuuryoku">
+                <p id="text"></p>
+                <p id="moji"></p>
+            </div>
+            <a id="c">のこりじかん</a>
+            <p id=time></p>
+            <div id="allscore">
+                <div>
+                    <a id="a">カエルのかず</a>
+                    <p id=score>0ひき</p>
+                </div>
+                <div>
+                    <a id="b">ミスタイプ</a>
+                    <p id=miss>0かい</p>
+                </div>
+            </div>
+        </div>
+        <p id="stcount"></p>
+        
+        <p id="about">
+            <span class="nomal">タイピングしてカエルをたくさんつかまえよう！</span>
+            <br>
+            <span class="hover1">かんたんモード！しょしんしゃもあそべるよ！</span>
+            <br>
+            <span class="hover2">むずかしいモード！なれてきたひとはやってみて！</span>
+        </p>
+        
+        <input id="start" type="image" src="image/Button/1605489459933.png" value="かんたん" onclick="start()" width="150px" height="150px;"/>
+        
+        <input id="start2" type="image" src="image/Button/1605489498779.png" value="むずかしい" onclick="start2()"width="150px" height="150px;"/>
+        <div id="finish">
+        <div id="Display2">
+            <p id="massage2"></p>
+        </div>
+        <img id="frogpics2" width="200px" height="200px" alt="かえる">
+        <input id="re" type="image" src="image/Button/1605490741288.png" value="おわり" onclick="reload()" width="150px" height="150px;"/>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
